@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Products</title>
+    <link rel="stylesheet" href="assets/css/admin-styles.css">
+    <script src="assets/js/admin-scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Manage Products</h1>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="manage-orders.html">Manage Orders</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Product List</h2>
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price (FCFA)</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="product-list">
+                <!-- Products will be loaded here by JS -->
+            </tbody>
+        </table>
+        <h3>Add Product</h3>
+        <form id="add-product-form">
+            <input type="text" id="product-name" placeholder="Product Name" required>
+            <input type="number" id="product-price" placeholder="Price" required>
+            <button type="submit">Add</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Online Food Ordering. Admin Panel.</p>
+    </footer>
+</body>
+</html>

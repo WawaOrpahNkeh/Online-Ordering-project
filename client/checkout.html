@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="assets/css/client-styles.css">
+    <script src="assets/js/client-scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Checkout</h2>
+        <form id="checkout-form">
+            <label for="address">Delivery Address:</label>
+            <input type="text" id="address" required><br>
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" required><br>
+            <h3>Order Summary</h3>
+            <ul id="checkout-summary"></ul>
+            <span id="checkout-total-label">Total: <span id="checkout-total">0.00</span> FCFA</span><br><br>
+            <label><input type="radio" name="payment" value="cod" checked> Cash on Delivery</label><br><br>
+            <button type="submit">Place Order</button>
+            <div id="checkout-message"></div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Online Food Ordering. All rights reserved.</p>
+    </footer>
+</body>
+</html>

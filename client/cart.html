@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="assets/css/client-styles.css">
+    <script src="assets/js/client-scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Cart</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Your Cart</h2>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price (FCFA)</th>
+                    <th>Quantity</th>
+                    <th>Subtotal (FCFA)</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="cart-list"></tbody>
+        </table>
+        <div class="cart-summary">
+            <span id="cart-total-label">Total: <span id="cart-total">0.00</span> FCFA</span>
+            <button id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Online Food Ordering. All rights reserved.</p>
+    </footer>
+</body>
+</html>

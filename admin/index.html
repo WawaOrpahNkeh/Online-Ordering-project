@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Maale Restaurant</title>
+    <link rel="stylesheet" href="assets/css/admin-styles.css">
+    <script src="assets/js/admin-scripts.js" defer></script>
+</head>
+<body>
+    <div class="admin-container">
+        <aside class="sidebar">
+            <h2>Maale Admin</h2>
+            <nav>
+                <a href="index.html" class="active">Dashboard</a>
+                <a href="manage-food.html">Manage Food</a>
+                <a href="manage-customers.html">Manage Customers</a>
+                <a href="manage-orders.html">Manage Orders</a>
+                <a href="manage-payments.html">Payments</a>
+                <a href="reports.html">Reports</a>
+            </nav>
+        </aside>
+        <main class="admin-main">
+            <header>
+                <h1>Welcome to Maale Restaurant Admin Dashboard</h1>
+                <p class="admin-welcome">Manage your restaurant efficiently. Use the sidebar to access all management features.</p>
+            </header>
+            <section class="admin-stats">
+                <div class="stat">
+                    <h3>Total Food Items</h3>
+                    <span id="stat-products">0</span>
+                </div>
+                <div class="stat">
+                    <h3>Total Orders</h3>
+                    <span id="stat-orders">0</span>
+                </div>
+                <div class="stat">
+                    <h3>Total Customers</h3>
+                    <span id="stat-customers">0</span>
+                </div>
+                <div class="stat">
+                    <h3>Revenue (FCFA)</h3>
+                    <span id="stat-revenue">0</span>
+                </div>
+            </section>
+            <section class="admin-recent-orders">
+                <h2>Recent Orders</h2>
+                <table class="admin-table">
+                    <thead>
+                        <tr><th>Order #</th><th>Customer</th><th>Total (FCFA)</th><th>Status</th><th>Date</th></tr>
+                    </thead>
+                    <tbody id="dashboard-recent-orders"></tbody>
+                </table>
+            </section>
+            <section class="admin-tips">
+                <h2>Admin Tips</h2>
+                <ul>
+                    <li>Use <b>Manage Food</b> to add, edit, or remove menu items.</li>
+                    <li>Check <b>Manage Orders</b> to update order statuses and view order details.</li>
+                    <li>Monitor <b>Payments</b> for payment status and method.</li>
+                    <li>Generate <b>Reports</b> for business insights and performance.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Maale Restaurant. Admin Panel.</p>
+    </footer>
+</body>
+</html>
